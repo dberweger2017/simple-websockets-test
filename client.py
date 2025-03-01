@@ -3,6 +3,8 @@ import socket, threading, json, pygame, sys
 # Network settings
 HOST = "2.tcp.ngrok.io"
 PORT = 12577
+#HOST = "0.0.0.0"
+#PORT = 9999
 
 # Game settings (must match the server)
 GAME_WIDTH = 640
