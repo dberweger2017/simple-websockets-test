@@ -1,5 +1,9 @@
 import socket, threading, json, pygame, sys
 
+# Network settings
+HOST = "2.tcp.ngrok.io"
+PORT = 12577
+
 # Game settings (must match the server)
 GAME_WIDTH = 640
 GAME_HEIGHT = 480
@@ -37,8 +41,8 @@ def main():
     clock = pygame.time.Clock()
     
     # Connect to server
-    host = '127.0.0.1'  # change to server IP if needed
-    port = 9999
+    host = HOST
+    port = PORT
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((host, port))
     
